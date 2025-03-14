@@ -56,6 +56,7 @@ public class Menu {
 					}
 					while(!formatoNumerico(aux));
 					double peso = Double.parseDouble(aux);
+                    
 
 					do {
 						System.out.print("Idade: ");

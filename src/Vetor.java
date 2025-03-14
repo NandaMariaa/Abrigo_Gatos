@@ -43,7 +43,6 @@ public class Vetor {
 
         s.append("");
         return s.toString();
- 
         }
  
      //
