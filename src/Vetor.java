@@ -6,24 +6,19 @@ public class Vetor {
  
      // Vetor
      public Vetor (int capacidade) {
-
          this.elementos = new Object [capacidade];
          this.tamanho = 0;
-
      }
  
      //Método para adicionar um Objeto da classe Gato como um novo elemento dentro do Vetor.
      public void adiciona (Object elemento) throws Exception {
- 
          this.aumentaCapacidade ();
          this.elementos [this.tamanho] = elemento;
          this.tamanho ++;
- 
      }
 
      //Método para aumentar a capacidade do vetor conforme a clase "adiciona" insere novos objetos nele.
      private void aumentaCapacidade() {
- 
         if (this.tamanho == this. elementos.length) {
             Object [] elementosNovos = new Object[this.elementos.length * 2];
              for (int i=0; i < this.elementos.length; i++) {
@@ -31,7 +26,6 @@ public class Vetor {
             }
              this.elementos=elementosNovos;
         }
-
      }
 
      //Utilização da nota Override para personalizar a exibição dos elementos do vetor.
@@ -60,25 +54,22 @@ public class Vetor {
          return this.tamanho;
      }
 
-     //Método para retirar o gato que foi adotado da lista do vetor com base em seu nome.
+     //Método para retirar o gato que foi adotado da lista do vetor,
+     //com base em seu nome.
 
      public boolean adota (String nome) {
 
         for (int i = 0; i < tamanho; i++) {
-
             if (((Gato) elementos[i]).getNome().equals(nome)) {
-
             for (int j = i; j < tamanho - 1; j++) {
                 elementos[j] = elementos[j + 1];
             }
-
             elementos[tamanho - 1] = null;
             tamanho--;
             
             System.out.println(nome + " ganhou um novo lar!");
             return true; 
          }
-
         }
 
         System.out.println("Este nome não consta entre nossos gatos!");
@@ -86,7 +77,8 @@ public class Vetor {
     
     }
 
-    //Método para remover um dos objetos do vetor (Um dos gatos) com base na posição que ele ocupa na lista.
+    //Método para remover um dos objetos do vetor (Um dos gatos),
+    //com base na posição que ele ocupa na lista.
     public void remove (int posicao) throws Exception {
  
         if(posicao >=0 && posicao < tamanho) {
