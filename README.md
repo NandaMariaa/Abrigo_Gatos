@@ -1,18 +1,11 @@
-## Getting Started
+## Ong Para Adoção 🌸
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**`Sobre 📌`**
 
-## Folder Structure
+Sistema de ong para adoção de gatos.
 
-The workspace contains two folders by default, where:
+### Resumo das Classes 🧮
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Gato:  Esta classe contém os atributos necessários para o cadastro de um novo objeto (Gato) no sistema de adoção (Exemplo: cor, idade), juntamente com métodos que serão utilizados para trabalhar com esses atributos e informações. 
+2. Teste: Classe que representa a interação do usuário com os métodos disponíveis (Exemplo: cadastrar um novo gato, incluir ele na lista do vetor, buscar um específico para ler suas informações, e entre outros).
+3. Vetor: Classe que armazena os métodos de manipulação do vetor.  
