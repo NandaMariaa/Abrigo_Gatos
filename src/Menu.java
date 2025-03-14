@@ -4,7 +4,6 @@ public class Menu {
 
     public static void iniciarMenu() throws Exception
     {
-  
         //1)
         Scanner input = new Scanner(System.in);
         Vetor vetor = new Vetor (5);
@@ -28,6 +27,7 @@ public class Menu {
                 case "1": //Incluir Novo Cadastro
                 
                     System.out.println("Informe os dados do gato:");
+   
                     System.out.print("Nome: ");
                     String nome = input.nextLine();
                     System.out.print("Peso: ");
@@ -49,7 +49,6 @@ public class Menu {
                     estado = "0";
                     break;
 
-                //3)
                 case "2": //Exibir vetor com todos os gatos cadastrados.
                     System.out.println("Cadastros:");
                     System.out.println(vetor);
@@ -58,7 +57,6 @@ public class Menu {
                     estado = "0";
                     break;
                 
-                //4)
                 case "3": //Pesquisar gato por nome.
                     System.out.print("Digite o nome do gato para buscar: ");
                     String nomeGato = input.nextLine();
@@ -68,7 +66,6 @@ public class Menu {
                     estado = "0";
                     break;
 
-                //5
                 case "4": //Retirar gato da Lista (Quando adotado).
                     System.out.print("Digite o nome do gato escolhido para a adoção.");
                     String gatoAdotado = input.nextLine();
@@ -78,7 +75,6 @@ public class Menu {
                     estado = "0";
                     break;
 
-                //5)
                 default: //estado sair
                     fechado = true;
                     input.close();
